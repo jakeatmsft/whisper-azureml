@@ -24,7 +24,7 @@ def init():
     #dest_model_path = os.path.join(os.path.expanduser("~"), ".cache", "whisper")
     model_path = os.path.join(os.getenv("AZUREML_MODEL_DIR"), 'base.en.pt')
     #shutil.copy(model_path, dest_model_path)
-    
+    #TODO: move pre-loaded model to cached location in order to avoid re-download
     model = whisper.load_model("base.en")
     logging.info("Init complete")
 
