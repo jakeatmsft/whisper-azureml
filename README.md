@@ -29,7 +29,8 @@ Whisper is a state-of-the-art speech to text model developed by OpenAI and recen
         - Model - The model to be used for scoring requests.
         - Code Configuration - The script to be used to initialize and run the model
         - Environment: The containerized environment to be used for execution of the model
-        - Instance Type: Type of server (CPU/GPU, Memory) to be used to scoring. Supported Types [https://learn.microsoft.com/en-us/azure/machine-learning/reference-managed-online-endpoints-vm-sku-list]
+        - Instance Type: Type of server (CPU/GPU, Memory) to be used to scoring. 
+          - Supported Types [https://learn.microsoft.com/en-us/azure/machine-learning/reference-managed-online-endpoints-vm-sku-list]
         - Instance Count: The number of servers required to accommodate requests.
 - Test the model by opening the "test-whisper-endpoint.ipynb":
   - Fill in the endpoint details from the deployment.
