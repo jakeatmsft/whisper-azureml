@@ -13,6 +13,8 @@ Whisper is a state-of-the-art speech to text model developed by OpenAI and recen
   - [https://learn.microsoft.com/en-us/dotnet/azure/install-azure-cli]
 - AzureML CLIv2
   - [https://learn.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli]
+- ** GPU VM FOR INFERENCING REQUIRED
+  - For running the whisper models in a notebook and/or deployed to Managed Endpoint, you will need a GPU VM. source: https://github.com/openai/whisper#available-models-and-languages
 
 
 ## Steps
