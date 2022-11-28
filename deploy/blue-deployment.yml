@@ -2,11 +2,11 @@ $schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.sch
 name: blue
 endpoint_name: my-endpoint
 model:
-  azureml:whisper-base:1
+  azureml:whisper-base:latest
 code_configuration:
   code: ../onlinescoring/
   scoring_script: score.py
 environment: 
-  azureml:whisper-base-env:3
+  azureml:whisper-base-env:latest
 instance_type: Standard_NC6s_v2
 instance_count: 1
