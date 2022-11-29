@@ -21,11 +21,9 @@ def init():
     # It is the path to the model folder (./azureml-models/$MODEL_NAME/$VERSION)
     # Please provide your model's folder name if there is one
     # deserialize the model file back into a sklearn model
-    #dest_model_path = os.path.join(os.path.expanduser("~"), ".cache", "whisper")
     model_path = os.path.join(os.getenv("AZUREML_MODEL_DIR"), 'base.en.pt')
-    #shutil.copy(model_path, dest_model_path)
-    #TODO: move pre-loaded model to cached location in order to avoid re-download
-    model = whisper.load_model("base.en")
+
+    model = whisper.load_model("base.en", download_root=os.getenv("AZUREML_MODEL_DIR"))
     logging.info("Init complete")
 
 
