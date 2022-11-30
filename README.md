@@ -22,6 +22,7 @@ Whisper is a state-of-the-art speech to text model developed by OpenAI and recen
 - Deploy Environment Setup
   - Navigate to the "notebooks" folder and begin by opening the CreateEnvironment
   - Run the first cell to load the Whisper model and save it in your local environment.
+     - Please note that even if the model fails to load in your development environment, check the "models" folder to see if the file has been downloaded.  If the model file is present please proceed to the next step.
   - Next run cells to connect to AzureML Workspace and deploy the model as well as the inferencing environment.
 - Deploy Managed Endpoint
   - Navigate to the "deploy" folder and run the "deploy.sh" bash script to deploy the model:
